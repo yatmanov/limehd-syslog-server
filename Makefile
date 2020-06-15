@@ -14,3 +14,6 @@ deploy:
 
 limehd-syslog-server:
 	go build 
+
+shell:
+	ssh root@rz.iptv2022.com
