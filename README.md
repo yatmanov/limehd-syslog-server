@@ -7,15 +7,15 @@
 
 ## Метрики
 
-* [ ] Трафик (`bytes_sent`)
-* [ ] online-пользователи (`connections`)
+* [ ] Трафик (`value` в measurement `bytes_sent`)
+* [ ] online-пользователи (`value` в measurement `connections`)
 
 ## Тэги
 
 * `country_id` - ID страны из [maxmind](https://dev.maxmind.com/geoip/legacy/codes/iso3166/)
-* `ss_channel`
-* `ss_host`
-* `ss_server_name`
+* `channel`
+* `streaming_server`
+* `quality`
 
 # Схема
 
@@ -35,8 +35,6 @@
                                               |        INFLUXDB       |
                                               |                       |
                                               +-----------------------+
-
-
 ```
 
 
