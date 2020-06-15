@@ -4,16 +4,13 @@
 +------------------------+                   +-------------------------+
 |                        |                   |                         |
 |  MEDIA STREAMAING      |   SYSLOG (UDP)    |                         |
-|  NGINX SERVERS         |                   |                         |
-|                        |   +----------->   |    LIMEHD SYSLOG SERVER |
-|                        |                   |                         |
+|  NGINX SERVERS         |                   |   LIMEHD SYSLOG SERVER  |
+|                        |   +----------->   |                         |
 +------------------------+                   +-------------------------+
-
                                                           +
                                                           |
                                                           |
                                                           v
-
                                               +-----------------------+
                                               |                       |
                                               |  INFLUXDB             |
