@@ -1,3 +1,22 @@
+# syslog сервер который собирает статистику с nginx серверов и складывае ее в influxdb
+
+## Боевой сервер
+
+* influx-host: `influx.iptv2022.com`
+* database: `polina`
+
+## Метрики
+
+* [ ] Трафик (`bytes_sent`)
+* [ ] online-пользователи (`connections`)
+
+## Тэги
+
+* `country_id` - ID страны из [maxmind](https://dev.maxmind.com/geoip/legacy/codes/iso3166/)
+* `ss_channel`
+* `ss_host`
+* `ss_server_name`
+
 # Схема
 
 ```
