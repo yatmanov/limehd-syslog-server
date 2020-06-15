@@ -8,5 +8,8 @@ build: limehd-syslog-server
 clean:
 	rm -f limehd-syslog-server
 
+deploy:
+	scp limehd-syslog-server root@rz.iptv2022.com:/root/
+
 limehd-syslog-server:
 	go build 
