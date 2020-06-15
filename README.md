@@ -1,6 +1,27 @@
 # Схема
 
-https://docs.google.com/drawings/d/15qWcQgiTo16clO7jfKQyXk9UJABi434Q_Ey0dY-PYy8/edit
+```
++------------------------+                   +-------------------------+
+|                        |                   |                         |
+|  MEDIA STREAMAING      |   SYSLOG (UDP)    |                         |
+|  NGINX SERVERS         |                   |                         |
+|                        |   +----------->   |    LIMEHD SYSLOG SERVER |
+|                        |                   |                         |
++------------------------+                   +-------------------------+
+
+                                                          +
+                                                          |
+                                                          |
+                                                          v
+
+                                              +-----------------------+
+                                              |                       |
+                                              |  INFLUXDB             |
+                                              |                       |
+                                              +-----------------------+
+
+
+```
 
 
 # Формат
