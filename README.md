@@ -85,5 +85,5 @@ log_format csv
                 $connection_requests|
                 $connection|
                 $bytes_sent;
-access_log syslog:server=127.0.0.1 csv;
+access_log syslog:server=127.0.0.1:PORT csv;
 ```
