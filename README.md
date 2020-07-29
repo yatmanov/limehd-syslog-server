@@ -58,8 +58,10 @@ oleg_maksimov  8:25 AM
 08:24:43.766326 IP 172.19.95.111.61437 > 194.35.48.67.514: SYSLOG local7.info, length: 295
 08:24:43.767118 IP 172.19.95.111.26344 > 194.35.48.67.514: SYSLOG local7.info, length: 470
 08:24:43.767415 IP 172.19.95.111.8950 > 194.35.48.67.514: SYSLOG local7.info, length: 452
+```
 
-8:29
+
+```
 log_format csv
                 $time_local|
                 $msec|
@@ -83,4 +85,5 @@ log_format csv
                 $connection_requests|
                 $connection|
                 $bytes_sent;
+access_log syslog:server=127.0.0.1 csv;
 ```
