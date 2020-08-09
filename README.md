@@ -1,5 +1,40 @@
 # syslog сервер который собирает статистику с nginx серверов и складывае ее в influxdb
 
+## Installation
+
+1. Python 3.7+ is required (use [pyenv](https://github.com/pyenv/pyenv) or [asdf](https://github.com/asdf-vm/asdf) to install required versions if you need to)
+
+2. Install next libraries to guarantee successful installation of project dependencies:
+  ```
+    $ sudo apt-get install python3-dev python3-venv build-essential 
+  ```
+3. Create and activate virtual environment:
+  ```
+    $ python3 -m venv <your_env_name>
+    $ source <your_env_name>/bin/activate
+  ```
+4. Install dependencies:
+  ```
+    $ python -m pip install -r requirements.txt
+  ```
+5. Run server:
+  ```
+    $ python main.py
+  ```
+
+## CLI options
+
+The server takes next cli options:
+  - `--port` - порт, который слушает
+  - `-i`, `--influx-host`
+  - `-d`, `--influx-db`
+  - `--mt`
+  - `--maxmind`
+
+```
+python main.py --port 9999 -i localhost -d 8086 --mt bytes_sent --maxmind /usr/share/GeoIP/GeoLite2-City.mmdb
+```
+
 ## Боевой сервер
 
 * influx-host: `influx.iptv2022.com`
